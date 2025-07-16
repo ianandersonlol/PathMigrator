@@ -21,47 +21,47 @@ A simple tool to replace file paths in text files across directory structures. O
 
 Replace the default paths in the current directory:
 ```bash
-python3 pathmigrator.py
+python pathmigrator.py
 ```
 
 Replace paths in a specific directory:
 ```bash
-python3 pathmigrator.py /path/to/your/directory
+python pathmigrator.py /path/to/your/directory
 ```
 
 ### Custom Path Replacement
 
 Replace any custom paths:
 ```bash
-python3 pathmigrator.py --old-path "/old/path/" --new-path "/new/path/" /target/directory
+python pathmigrator.py --old-path "/old/path/" --new-path "/new/path/" /target/directory
 ```
 
 ### Preview Changes (Dry Run)
 
 See what changes would be made without actually modifying files:
 ```bash
-python3 pathmigrator.py --dry-run
+python pathmigrator.py --dry-run
 ```
 
 ### Examples
 
 1. **Preview changes in current directory:**
    ```bash
-   python3 pathmigrator.py --dry-run
+   python pathmigrator.py --dry-run
    ```
 
 2. **Replace custom paths in a specific directory:**
    ```bash
-   python3 pathmigrator.py --old-path "/home/user/" --new-path "/Users/user/" ~/Documents
+   python pathmigrator.py --old-path "/home/user/" --new-path "/Users/user/" ~/Documents
    ```
 
 3. **Process a directory with dry run first:**
    ```bash
    # First, see what would change
-   python3 pathmigrator.py --dry-run ~/my-project
+   python pathmigrator.py --dry-run ~/my-project
    
    # Then apply the changes
-   python3 pathmigrator.py ~/my-project
+   python pathmigrator.py ~/my-project
    ```
 
 ## What Files Are Processed
